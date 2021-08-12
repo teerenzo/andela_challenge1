@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: hsl(0, 0%, 95%);
+ font-size: 15px;
+}
+
+/* sedans */
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    padding: 50px;
+ flex-direction: column;
+
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    padding: 50px;
+ flex-direction: column; 
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    padding: 50px;
+ flex-direction: column; 
+}
+
+.img{
+    width: 80;
+}
+
+ h1{
+    
+    margin: 15px 0 15px 0;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+}
+ p{
+    margin-bottom: 50px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+}
+.cta{
+    background-color: hsl(0, 0%, 95%);
+    padding: 13px 20px 13px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 25px;
+}
+
+
+.sedans .cta{
+    color: hsl(31, 77%, 52%);
+}
+.suvs .cta{
+    color: hsl(184, 100%, 22%);
+}
+.luxury .cta{
+    color: hsl(179, 100%, 13%);
+}
+.cta:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+/* suvs */
+/* desktop */
+@media only screen and (min-width: 992px) {
+    .container{
+        display: flex;
+    margin: 150px 200px 0 200px;
+        }
+        .sedans{
+         border-bottom-left-radius: 10px;
+         border-top-left-radius: 10px;
+        }
+
+        .luxury{
+            border-bottom-right-radius: 10px;
+         border-top-right-radius: 10px;
+        }
+}
+
+/* mobile */
+@media only screen and (max-width: 992px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 30px 50px 30px;
+    }
+
+    .sedans{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+       }
+
+       .luxury{
+           border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+       }
+}
+
